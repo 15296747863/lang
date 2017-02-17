@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/base.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <style>
+        .active{background:#699f00; width:200px;}
+    </style>
+    <script>
+        window.onload=function(){
+            var oT=document.getElementById('t1');
+            var oSpan=document.getElementById('i');
+            var oUl=document.getElementById('ul1');
+            var aLi=oUl.getElementsByTagName('li');
+            oT.onfocus=function(){
+                oSpan.style.display='none';
+            };
+            oT.onblur=function(){
+                if(this.value==''){
+                    oSpan.style.display='block';
+                }
+            };
+            oSpan.onclick=function(){
+                oT.focus()
+            };
+            for(var i=0; i<aLi.length; i++){
+                aLi[i].onmouseover=function(){
+                   for(var i=0; i<aLi.length; i++){
+                       aLi[i].className='';
+                   }
+                   this.className='active';
+                }
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+<div class="box clearfix">
+  <p class="box1"><img style="display:block;" src="img/111.png"/></p>
+    <div class="box2 fl">
+       <span class="iii" id="i">大好时光</span>
+       <input type="text" id="t1" class="box3 fl"/>
+       <p class="box4 fl"><a href="javascript:;" class="box5"></a></p>
+   </div>
+   <ul class="box6 fr" id="box6">
+       <li><a href="javascript:;">登录</a></li>
+       <li><a href="javascript:;">注册</a></li>
+       <li><a href="javascript:;">开通VIP</a></li>
+       <li><a href="javascript:;"><span></span>上传<strong class="strong1"></strong><i></i></a></li>
+       <li><a href="javascript:;">下载<strong class="strong1"></strong></a></li>
+       <li><a href="javascript:;">消息<i></i></a></li>
+       <li><a href="javascript:;">播放记录<i></i></a></li>
+   </ul>
+   <div class="box7 clearfix fr">
+      <ul id="ul1">
+          <li class="avtive"><a href="javascript:;">美人为馅：杨蓉白宇悬爱揭迷</a></li>
+          <li><a href="javascript:;">灵魂摆渡3：铁三角全员回归</a></li>
+          <li><a href="javascript:;">梦想的声音：羽泉遇克星弃权</a></li>
+          <li><a href="javascript:;">四平青年之浩哥大战古惑仔</a></li>
+          <li><a href="javascript:;">了不起：最小蜘蛛侠实现攀岩</a></li>
+          <li><a href="javascript:;">爱上超模：女权大片挑战猛男</a></li>
+          <li><a href="javascript:;">欢脱定律：威驰脸盲错认叶青</a></li>
+          <li><a href="javascript:;">安托万夫人：盛骏情挑韩艺瑟</a></li>
+          <li><a href="javascript:;">幻城：利落凤殇灵魂互换</a></li>
+          <li><a href="javascript:;">城主杨洋邀你5折快快抢</a></li>
+
+      </ul>
+   </div>
+</div>
+    <div class="box8">
+       <div class="box9 clearfix">
+       <div class="fl">
+           <h1 class="box10"></h1>
+           <h2 class="box11"></h2>
+       </div>
+       <ul class="box12 clearfix fl">
+           <li><a href="javascript:;">娱乐</a></li>
+           <li><a href="javascript:;">体育</a></li>
+           <li><a href="javascript:;">资讯</a></li>
+       </ul>
+       <div class="box13 clearfix fl">
+           <ul class="fl box15">
+               <li><a href="javascript:;">电影</a></li>
+               <li><a href="javascript:;">片花</a></li>
+               <li><a href="javascript:;">微电影</a></li>
+           </ul>
+           <ul class="fl box14">
+               <li><a href="javascript:;">电视剧</a></li>
+               <li><a href="javascript:;">综艺</a></li>
+               <li><a href="javascript:;">脱口秀</a></li>
+           </ul>
+       </div>
+           <div class="box13 clearfix fl">
+               <ul class="fl box15">
+                   <li><a href="javascript:;">动漫</a></li>
+                   <li><a href="javascript:;">少儿</a></li>
+                   <li><a href="javascript:;">游戏</a></li>
+               </ul>
+               <ul class="fl box14">
+                   <li><a href="javascript:;">生活</a></li>
+                   <li><a href="javascript:;">母婴</a></li>
+                   <li><a href="javascript:;">健康</a></li>
+               </ul>
+           </div>
+           <div class="box13 clearfix fl">
+               <ul class="fl box15">
+                   <li><a href="javascript:;">音乐</a></li>
+                   <li><a href="javascript:;">时尚</a></li>
+                   <li><a href="javascript:;">旅游</a></li>
+               </ul>
+               <ul class="fl box14">
+                   <li><a href="javascript:;">搞笑</a></li>
+                   <li><a href="javascript:;">原唱</a></li>
+                   <li><a href="javascript:;">拍客</a></li>
+               </ul>
+           </div>
+           <div class="box13 clearfix fl">
+               <ul class="fl box15">
+                   <li><a href="javascript:;">财经</a></li>
+                   <li><a href="javascript:;">科技</a></li>
+                   <li><a href="javascript:;">汽车</a></li>
+               </ul>
+               <ul class="fl box14">
+                   <li><a href="javascript:;">军事</a></li>
+                   <li><a href="javascript:;">教育</a></li>
+                   <li><a href="javascript:;">纪录片</a></li>
+               </ul>
+           </div>
+           <div class="box13 clearfix fl">
+               <ul class="fl box15">
+                   <li><a href="javascript:;">风云榜</a></li>
+                   <li><a href="javascript:;">全网影视</a></li>
+                   <li><a href="javascript:;">爱奇艺搜索</a></li>
+               </ul>
+               <ul class="fl box14">
+                   <li><a href="javascript:;">公益</a></li>
+                   <li><a href="javascript:;">直播中心</a></li>
+                   <li><a href="javascript:;">爱奇艺出品</a></li>
+               </ul>
+           </div>
+           <div class="box13 clearfix fl">
+               <ul class="fl box15">
+                   <li><a href="javascript:;">pps游戏</a></li>
+                   <li><a href="javascript:;">应用商店</a></li>
+                   <li><a href="javascript:;">爱奇艺商城<strong class="strong1"></strong></a></li>
+               </ul>
+               <ul class="fl box17">
+                   <li><a href="javascript:;">pps奇秀</a></li>
+                   <li><a href="javascript:;"><i class="box16">VIP</i>会员</a></li>
+                   <li><a href="javascript:;">个人中心<strong class="strong1"></strong></a></li>
+               </ul>
+           </div>
+    </div>
+</div>
+<div class="boq">
+    <div class="boq1 clearfix">
+      <div class="boq2 fl">
+          <div class="boq3">
+            <h3 class="boq4 fl">今日焦点<a href="javascript:;"> 更多</a></h3>
+            <p class="boq5 fr"><i></i>独播</p>
+          </div>
+          <dl class="boq6 clearfix">
+              <dt><a href="javascript:;">北京市委副书记吕锡文涉严重违纪被查</a></dt>
+              <dd><a href="javascript:;"><i></i>12306推双验证防身份抢注</a><a href="javascript:;"> 埃及金字塔现诡异温差</a></dd>
+              <dd><a href="javascript:;"><i></i>巴基斯坦向中国出租瓜达尔湾</a><a href="javascript:;"> 或成重军要军事基地</a></dd>
+              <dd><a href="javascript:;"><i></i>高校光棍节禁情侣喂饭</a><a href="javascript:;"> 女子因鸭子暴毙骂死邻居</a></dd>
+              <dd><a href="javascript:;"><i></i>女子重488斤成中国第一胖</a><a href="javascript:;"> 曾一顿吃掉00个肉串</a></dd>
+              <dd><a href="javascript:;"><i></i>小伙学穿越剧拆ATM偷钱</a><a href="javascript:;"> 男子坐购物车兜风丧命</a></dd>
+              <dd><a href="javascript:;"><i></i>男子滚下百米雪峰奇迹生还</a><a href="javascript:;"> 老汉偷车扛起来就跑</a></dd>
+
+          </dl>
+          <div class="boq7 clearfix">
+              <ul class="boq8 fl">
+                  <li><a class="boq9" href="javascript:;"></a></li>
+                  <li><a class="boq10" href="javascript:;">任性赛车段两截后如常行驶</a></li>
+              </ul>
+
+              <ul class="boq11 fr">
+                  <li><a class="boq12" href="javascript:;"></a></li>
+                  <li><a class="boq13" href="javascript:;">半裸男爬高压塔被电晕悬空</a></li>
+              </ul>
+          </div>
+
+      </div>
+      <div class="bow1 fl">
+           <div class="bow2">
+               <img src="img/11.png" alt=""/>
+           </div>
+      <ul class="bow3">
+          <li><a href="javascript:;"><i></i>《大牌对王牌》 本周五早8点：蒋劲夫率爷们班夺冠</a></li>
+          <li><a href="javascript:;"><i></i>MAMA：BTS独家问候粉丝</a><a href="javascript:;">周喻民求婚过程曝光/a></li>
+          <li><a href="javascript:;"><i></i>杨幂穿旗袍录《跑男3》</a><a href="javascript:;">快男王烨鑫得女当爸爸</a></li>
+          <li><a href="javascript:;"><i></i>韩庚MV写爱情故事</a><a href="javascript:;">王凯美手KO老干部霍建华</a></li>
+          <li><a href="javascript:;"><i></i>截这里领双11千万优惠卷</a><a href="javascript:;">易迅11.11狂欢盛宴</a></li>
+      </ul>
+      </div>
+      <div class="bow4 clearfix fl">
+          <ul class="fl">
+              <li><a class="bow5" href="javascript:;"></a></li>
+              <li><a class="bow6" href="javascript:;">女神蔡妍为众鲜肉贴心擦汗</a></li>
+          </ul>
+          <ul class="bow11 fl">
+              <li><a class="bow7" href="javascript:;"></a></li>
+              <li><a class="bow8" href="javascript:;">最好吃的饭：妈妈的味道</a></li>
+          </ul>
+          <ul class="bow11 fl">
+              <li><a class="bow9" href="javascript:;"></a></li>
+              <li><a class="bow10" href="javascript:;">小S别逼大汉黄子佼</a></li>
+          </ul>
+      </div>
+    </div>
+</div>
+<div class="boe">
+    <div class="boe1 clearfix">
+        <div class="boe2 fl">
+           <div class="boe3 clearfix">
+                <h3 class="fl"><i class="boe4"></i>综艺 <a href="javascript:;" class="boe5">更多></a></h3>
+                <ul class="boe6 fl">
+                    <li><a href="javascript:;">爱上超模第二季<i></i></a></li>
+                    <li><a href="javascript:;">晓松奇谈<i></i></a></li>
+                    <li><a href="javascript:;">大牌对王牌<i></i></a></li>
+                    <li><a href="javascript:;">流行之王</a></li>
+                </ul>
+               <div class="boe7 fr"><a class="boe8 fl" href="javascript:;"></a><a class="boe9 fl" href="javascript:;"></a></div>
+           </div>
+           <div class="bor fl clearfix">
+              <div class="bor1 fl">
+                  <a class="bor2" href="javascript:;"></a>
+                  <div class="bor3">
+                      <p><a class="bor4" href="javascript:;"> 非首脑会谈</a></p>
+                      <p><a class="bor5" href="javascript:;"> 各国富二代奢侈生活大揭秘 意大利天假停车费惊呆众人</a></p>
+                  </div>
+
+              </div>
+               <div class="bor6 fl">
+                   <a class="bor7" href="javascript:;"></a>
+                   <div class="bor8">
+                       <p><a class="bor9" href="javascript:;">流行之王</a></p>
+                       <p><a class="bor10" href="javascript:;">李正军《怯》致敬宋闵浩</a></p>
+                   </div>
+
+               </div>
+               <div class="bor11 fl">
+                   <a class="bor12" href="javascript:;"></a>
+                   <div class="bor13">
+                       <p><a class="bor14" href="javascript:;">爱上超模</a></p>
+                       <p><a class="bor15" href="javascript:;">赵家彤撞上Grace Jones</a></p>
+                   </div>
+                   <div class="bor16 fl">
+                       <a class="bor17" href="javascript:;"></a>
+                       <div class="bor18">
+                           <p><a class="bor19" href="javascript:;">美丽俏佳人</a></p>
+                           <p><a class="bor20" href="javascript:;">美丽创新力 互联网风尚大典</a></p>
+                       </div>
+                   </div>
+                   </div>
+                   <div class="bor21 fl">
+                       <a class="bor22" href="javascript:;"></a>
+                       <div class="bor23">
+                           <p><a class="bor24" href="javascript:;">综艺大嘴巴</a></p>
+                           <p><a class="bor25" href="javascript:;">"楼诚"还原风衣经典桥段</a></p>
+                       </div>
+
+                   </div>
+           </div>
+        </div>
+
+        <div class="bot clearfix fr">
+           <div class="bot1">
+                <h3><i></i>精彩推荐<a href="javascript:;" class="bot2 fr">更多</a></h3>
+
+           </div>
+           <div class="bot4">
+               <a  class="bot5" href="javascript:;"></a>
+               <div class="bot6">
+                   <p>光棍节 恩爱秀多了也会腻</p>
+                   <ul class="bot7">
+                       <li><a href="javascript:;"><i></i>乔振宇跳中年迪斯科</a></li>
+                       <li><a href="javascript:;"><i></i>苏志逼的有机约会</a></li>
+                       <li><a href="javascript:;"><i></i>EXO伯贤自爆"无喉结"</a></li>
+                       <li><a href="javascript:;"><i></i>钟汉良的《普通人》</a></li>
+                       <li><a href="javascript:;"><i></i>奚梦瑶走维秘极致性感</a></li>
+
+                   </ul>
+               </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="boy">
+    <p class="boy1">奔跑吧兄弟第三季<i></i><a href="javascript:;">进入专题></a></p>
+</div>
+<div class="bou">
+    <div class="bou1 clearfix">
+        <ul class="bou2 fl">
+            <li><a href="javascript:;" class="bou3"></a></li>
+            <li><a href="javascript:;" class="bou4"><i>正在回顾</i> 邓超李晨互黑笑翻众人</a></li>
+        </ul>
+        <ul class="bou5 fl">
+            <li><a href="javascript:;" class="bou6"></a></li>
+            <li><a href="javascript:;" class="bou7"><i>自制节目</i> 前方高能!路人答跑男烧脑题</a></li>
+        </ul>
+        <ul class="bou8 fl">
+            <li><a href="javascript:;" class="bou9"></a></li>
+            <li><a href="javascript:;" class="bou10"><i>精彩片段</i> 邓超再现《甜蜜蜜》经典场景</a></li>
+        </ul>
+        <ul class="bou11 fl">
+            <li><a href="javascript:;" class="bou12"></a></li>
+            <li><a href="javascript:;" class="bou13"><i>未播花絮</i> 祖蓝宋佳宿敌再聚首</a></li>
+        </ul>
+        <ul class="bou14 fl">
+            <li><a href="javascript:;" class="bou15"></a></li>
+            <li><a href="javascript:;" class="bou16"><i>新闻速递</i> 跑男做公益AB女汉子上身</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="boi">
+    <p class="boi1">脱口秀<a href="javascript:;"> 更多></a></p>
+</div>
+<div class="boo">
+    <div class="boo1 clearfix">
+        <ul class="boo2 fl">
+            <li><a href="javascript:;" class="boo3"></a></li>
+            <li><a href="javascript:;" class="boo4">康熙来了<p>小S叫停录影当场落泪</p></a></li>
+        </ul>
+        <ul class="boo5 fl">
+            <li><a href="javascript:;" class="boo6"></a></li>
+            <li><a href="javascript:;" class="boo7">晓松奇谈<p>纳尼?张员闹复辟梅兰芳捧场</p></a></li>
+        </ul>
+        <ul class="boo8 fl">
+            <li><a href="javascript:;" class="boo9"></a></li>
+            <li><a href="javascript:;" class="boo10">时尚江湖<p>刘青云：我专注演警探二十年</p></a></li>
+        </ul>
+        <ul class="boo11 fl">
+            <li><a href="javascript:;" class="boo12"></a></li>
+            <li><a href="javascript:;" class="boo13">今晚80后脱口秀<p>女人为双十一禁欲一个月</p></a></li>
+        </ul>
+        <ul class="boo14 fl">
+            <li><a href="javascript:;" class="boo15"></a></li>
+            <li><a href="javascript:;" class="boo16">非常静距离<p>孙骁骁为李响庆祝生日</p></a></li>
+        </ul>
+
+    </div>
+</div>
+<div class="boo121">
+    <a href="javascript:;"><img src="img/37.png" alt=""></a>
+</div>
+
+<div class="bop">
+    <div class="bop1 clearfix">
+        <h3 class="bop2 fl"><i class="bop4"></i>娱乐<a href="javascript:;"> 更多></a></h3>
+        <ul class="bop3 fl">
+            <li><a href="javascript:;">大牌对王牌<span></span></a></li>
+            <li><a href="javascript:;">爱奇艺早班机<span></span></a></li>
+            <li><a href="javascript:;">超能大星探<span></span></a></li>
+            <li><a href="javascript:;">帕帕帮<span></span></a></li>
+            <li><a href="javascript:;">泡菜帮<span></span></a></li>
+            <li><a href="javascript:;">娱乐猛回头</a></li>
+        </ul>
+        <a href="javascript:;" class="bop5 fr"></a>
+    </div>
+</div>
+<div class="boa">
+    <div class="boa1 clearfix">
+        <ul class="boa2 fl">
+            <li><a class="boa3" href="javascript:;"></a></li>
+            <li><a class="boa4" href="javascript:;">李小璐跪地为甜馨扎小辫 贾乃亮熊抱女儿<p>日前,夫妻两人带着甜馨忙里偷闲回京小歇几日。当天,夫妻两人...</p></a></li>
+        </ul>
+        <ul class="boa5 fl">
+            <li><a class="boa6" href="javascript:;"></a></li>
+            <li><a class="boa7" href="javascript:;">《大牌对王牌》曝最新预告蒋劲夫帮爷们班夺冠</a></li>
+        </ul>
+        <ul class="boa8 fl">
+            <li><a class="boa9" href="javascript:;"></a></li>
+            <li><a class="boa10" href="javascript:;">电视剧《幻城》曝最新剧照冯绍峰宋茜深情对望</a></li>
+        </ul>
+        <ul class="boa11 fl">
+            <li><a class="boa12" href="javascript:;"></a></li>
+            <li><a class="boa13" href="javascript:;">爱奇艺全球人气奖投票火热进行中 最新榜单</a></li>
+        </ul>
+        <ul class="boa14 fl">
+            <li><a class="boa15" href="javascript:;"></a></li>
+            <li><a class="boa16" href="javascript:;">跑男3南京录制王宝强回归成员穿银色战衣</a></li>
+        </ul>
+        <ul class="boa17 fl">
+            <li><a class="boa18" href="javascript:;"></a></li>
+            <li><a class="boa19" href="javascript:;">王菲素颜与友人亲密自拍休闲装扮坐姿霸气</a></li>
+        </ul>
+        <ul class="boa20 fl">
+            <li><a class="boa21" href="javascript:;"></a></li>
+            <li><a class="boa22" href="javascript:;">全程回顾：王源生日会</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="bop">
+    <div class="bop1 clearfix">
+        <h3 class="bop2 fl"><i class="bop4"></i>猜你喜欢<a href="javascript:;"> 更多></a></h3>
+        <ul class="bop3 fl">
+            <li><a href="javascript:;">我的播放记录<span></span></a></li>
+            <li><a href="javascript:;">我的收藏<span></span></a></li>
+            <li><a href="javascript:;">我的上传</a></li>
+        </ul>
+
+    </div>
+</div>
+<div class="bos">
+    <div class="bos1 clearfix">
+        <ul class="bos2 fl">
+            <li><a class="bos3" href="javascript:;"></a></li>
+            <li><a class="bos4" href="javascript:;">蜀山战纪第1季<p>赵丽颖陈伟霆虐恋情深</p></a></li>
+        </ul>
+        <ul class="bos5 fl">
+            <li><a class="bos6" href="javascript:;"></a></li>
+            <li><a class="bos7" href="javascript:;">城管队长被当街砍死</a></li>
+        </ul>
+        <ul class="bos8 fl">
+            <li><a class="bos9" href="javascript:;"></a></li>
+            <li><a class="bos10" href="javascript:;">飞碟冷知识<p>羞羞！鸳鸯浴的N种洗法</p></a></li>
+        </ul>
+        <ul class="bos11 fl">
+            <li><a class="bos12" href="javascript:;"></a></li>
+            <li><a class="bos13" href="javascript:;">催眠大师搞笑盘点<p>二货妹子扒裤大计锦</p></a></li>
+        </ul>
+        <ul class="bos14 fl">
+            <li><a class="bos15" href="javascript:;"></a></li>
+            <li><a class="bos16" href="javascript:;">女子7年网购13万误买房</a></li>
+        </ul>
+        <ul class="bos17 fl">
+            <li><a class="bos18" href="javascript:;"></a></li>
+            <li><a class="bos19" href="javascript:;">叮咚妹你好<p>隐秘镜头下韩国超模夫妇</p></a></li>
+        </ul>
+        <ul class="bos20 fl">
+            <li><a class="bos21" href="javascript:;"></a></li>
+            <li><a class="bos22" href="javascript:;">欢乐囧途精选集<p>笑尿！脑残妹子作死花样多</p></a></li>
+        </ul>
+        <ul class="bos23 fl">
+            <li><a class="bos24" href="javascript:;"></a></li>
+            <li><a class="bos25" href="javascript:;">情剑<p>谢霆锋阿娇聚首大荧幕</p></a></li>
+        </ul>
+        <ul class="bos26 fl">
+            <li><a class="bos27" href="javascript:;"></a></li>
+            <li><a class="bos28" href="javascript:;">野山鹰<p>女汉子的传奇抗战生涯</p></a></li>
+        </ul>
+        <div class="bos30 fl"><a href="javascript:;">进入个人中心></a></div>
+    </div>
+</div>
+<div class="bod">
+    <div class="bod1 clearfix">
+        <p class="bod3">推广广告</p>
+        <div class="bod2 fl">
+        <a class="bod10" href="javascript:;"></a>
+        <a class="bod11" href="javascript:;"></a>
+        <ul class="bod4">
+            <li><a class="bod5" href="javascript:;"></a></li>
+            <li><a class="bod6" href="javascript:;"></a></li>
+            <li><a class="bod7" href="javascript:;"></a></li>
+            <li><a class="bod8" href="javascript:;"></a></li>
+            <li><a class="bod9" href="javascript:;"></a></li>
+        </ul>
+    </div>
+    </div>
+</div>
+<div class="bof">
+    <div class="bof1 clearfix">
+        <div class="bof2 fl">
+            <div class="bof3">
+                <h3 class="bof4 fl"><i></i>电影<a href="javascript:;"> 更多></a></h3>
+                <ul class="bof5 clearfix fl">
+                    <li><a href="javascript:;">爱奇艺爱电影<i></i></a></li>
+                    <li><a href="javascript:;">网络大电影<i></i></a></li>
+                    <li><a href="javascript:;">VIP会员<i></i></a></li>
+                    <li><a href="javascript:;">爱大片：单身人士N种自嗨指南</a></li>
+                </ul>
+            </div>
+            <div class="bof6 clearfix">
+                <ul class="bof7 fl">
+                    <li><a class="bof8" href="javascript:;"></a></li>
+                    <li class="bof9"><a class="bof10" href="javascript:;">前任二备胎反击战<p>重口味喜剧笑道没朋友</p></a></li>
+                </ul>
+
+                <ul class="bof11 fl">
+                    <li><a class="bof12" href="javascript:;"></a></li>
+                    <li class="bof13"><a class="bof14" href="javascript:;">道士下山<p>陈凯歌以武载道话奇观</p></a><i class="bopp1"></i></li>
+                </ul>
+                <ul class="bof15 fl">
+                    <li><a class="bof16" href="javascript:;"></a></li>
+                    <li class="bof17"><a class="bof18" href="javascript:;">情剑<p>谢霆锋阿娇聚首大荧幕</p></a></li>
+                </ul>
+                <ul class="bof19 fl">
+                    <li><a class="bof20" href="javascript:;"></a></li>
+                    <li class="bof21"><a class="bof22" href="javascript:;">我是路人甲<p>尔冬升小人物情怀力作</p></a></li>
+                </ul>
+                <ul class="bof23 fl">
+                    <li><a class="bof24" href="javascript:;"></a></li>
+                    <li class="bof25"><a class="bof26" href="javascript:;">山炮进城<p>赵家班首部网络大电影</p></a></li>
+                </ul>
+                <ul class="bof27 fl">
+                    <li><a class="bof28" href="javascript:;"></a></li>
+                    <li class="bof29"><a class="bof30" href="javascript:;">斗地主<p>买红妹潘长江爆笑斗法</p></a></li>
+                </ul>
+                <ul class="bof31 fl">
+                    <li><a class="bof32" href="javascript:;"></a></li>
+                    <li class="bof33"><a class="bof34" href="javascript:;">奔跑吧有情人<p>郑凯银幕处女座</p></a></li>
+                </ul>
+                <ul class="bof35 fl">
+                    <li><a class="bof36" href="javascript:;"></a></li>
+                    <li class="bof37"><a class="bof38" href="javascript:;">第三种爱情<p>刘亦菲宋承宪定情之作</p></a></li>
+                </ul>
+            </div>
+        </div>
+    <div class="bog fr clearfix">
+        <div class="bog1">
+            <h3><i></i>电影榜<a href="javascript:;"> 更多></a></h3>
+            <ul class="bog2">
+                <li><i class="bog3">1</i><a  href="javascript:;">道士下山</a></li>
+                <li><i class="bog3">2</i><a  href="javascript:;">山炮进城</a></li>
+                <li><i class="bog3">3</i><a  href="javascript:;">斗地主</a></li>
+
+                <li><i class="bog5">4</i><a  href="javascript:;">坏姐姐之拆婚联盟</a></li>
+                <li><i class="bog5">5</i><a href="javascript:;">我是路人甲</a></li>
+                <li><i class="bog5">6</i><a  href="javascript:;">移动迷宫</a></li>
+                <li><i class="bog5">7</i><a  href="javascript:;">第三种爱情</a></li>
+                <li><i class="bog5">8</i><a  href="javascript:;">煎饼侠</a></li>
+                <li><i class="bog5">9</i><a  href="javascript:;">烈日灼心</a></li>
+
+            </ul>
+            <ul class="bog15 fl">
+                <li><a class="bog16" href="javascript:;"></a></li>
+                <li class="bog17"><a class="bog18" href="javascript:;">捉妖记<p>萌笑点起奇幻剧作</p></a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="boh">
+    <div class="boh1 clearfix">
+        <div class="boh2 fl">
+            <div class="boh3 clearfix">
+                <h3 class="boh4 fl">微电影<a href="javascript:;"> 更多></a></h3>
+                <ul class="boh5 fl">
+                    <li><a href="javascript:;">第二届深圳国际微电影节</a></li>
+                    <li><i></i><a href="javascript:;">中国梦365个故事</a></li>
+                </ul>
+            </div>
+            <ul class="boh6 fl">
+              <li><a class="boh7" href="javascript:;"></a></li>
+              <li class="boh8"><a href="javascript:;">史上卡司最豪华短片</a></li>
+            </ul>
+            <ul class="boh9 fl">
+                <li><a class="boh10" href="javascript:;"></a></li>
+                <li class="boh11"><a href="javascript:;">落难妇女的救赎之路</a></li>
+            </ul>
+            <ul class="boh12 fl">
+                <li><a class="boh13" href="javascript:;"></a></li>
+                <li class="boh14"><a href="javascript:;">冒险穷三代刺激毁一生</a></li>
+            </ul>
+        </div>
+         <div class="boh15 fr">
+             <div class="boh16 clearfix">
+                <h3 class="boh17 fl">片花<a href="javascript:;"> 更多></a></h3>
+                <ul class="boh18 fl">
+                    <li><a href="javascript:;">007系列回顾</a></li>
+                    <li class="boh19"><a href="javascript:;">11月院线观影指南</a></li>
+                </ul>
+             </div>
+             <div class="clearfix">
+                 <ul class="boh20 fl">
+                     <li><a class="boh21" href="javascript:;"></a></li>
+                     <li class="boh22"><a href="javascript:;">万万：甜馨父女唱片尾曲</a></li>
+                 </ul>
+                 <ul class="boh23 fl">
+                     <li><a class="boh24" href="javascript:;"></a></li>
+                     <li class="boh25"><a href="javascript:;">从天儿降：光棍节特辑</a></li>
+                 </ul>
+             </div>
+         </div>
+    </div>
+</div>
+
+<div class="boj">
+    <div class="boj1 clearfix">
+        <div class="boj2 fl">
+            <div class="boj3">
+                <h3 class="boj4 fl"><i></i>电视剧<a href="javascript:;"> 更多></a></h3>
+                <ul class="boj5 clearfix fl">
+                    <li><a href="javascript:;">内地<i></i></a></li>
+                    <li><a href="javascript:;">韩剧<i></i></a></li>
+                    <li><a href="javascript:;">日剧<i></i></a></li>
+                    <li><a href="javascript:;">美剧</a></li>
+                </ul>
+            </div>
+            <div class="boj6 clearfix">
+                <ul class="boj7 fl">
+                    <li><a class="boj8" href="javascript:;"></a></li>
+                    <li class="boj9"><a class="boj10" href="javascript:;">北上广不相信眼泪</a></li>
+                </ul>
+
+                <ul class="boj11 fl">
+                    <li><a class="boj12" href="javascript:;"></a></li>
+                    <li class="boj13"><a class="boj14" href="javascript:;">灵魂摆渡2</a></li>
+                </ul>
+                <ul class="boj15 fl">
+                    <li><a class="boj16" href="javascript:;"></a></li>
+                    <li class="boj17"><a class="boj18" href="javascript:;">大秧歌</a></li>
+                </ul>
+                <ul class="boj19 fl">
+                    <li><a class="boj20" href="javascript:;"></a></li>
+                    <li class="boj21"><a class="boj22" href="javascript:;">大汉情缘之云中歌</a></li>
+                </ul>
+                <ul class="boj23 fl">
+                    <li><a class="boj24" href="javascript:;"></a></li>
+                    <li class="boj25"><a class="boj26" href="javascript:;">蜀山战纪第2季</a></li>
+                </ul>
+                <ul class="boj27 fl">
+                    <li><a class="boj28" href="javascript:;"></a></li>
+                    <li class="boj29"><a class="boj30" href="javascript:;">反恐特战队</a></li>
+                </ul>
+                <ul class="boj31 fl">
+                    <li><a class="boj32" href="javascript:;"></a></li>
+                    <li class="boj33"><a class="boj34" href="javascript:;">新活佛济公下部</a></li>
+                </ul>
+                <ul class="boj35 fl">
+                    <li><a class="boj36" href="javascript:;"></a></li>
+                    <li class="boj37"><a class="boj38" href="javascript:;">野山鹰</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bok fr clearfix">
+            <div class="bok1">
+                <h3><i></i>电影榜<a href="javascript:;"> 更多></a></h3>
+                <ul class="bok2">
+                    <li><i class="bok3">1</i><a  href="javascript:;">大汉情缘云中歌</a></li>
+                    <li><i class="bok3">2</i><a  href="javascript:;">反恐特战队</a></li>
+                    <li><i class="bok3">3</i><a  href="javascript:;">大秧歌</a></li>
+
+                    <li><i class="bok5">4</i><a  href="javascript:;">大好时光</a></li>
+                    <li><i class="bok5">5</i><a href="javascript:;">琳琅榜</a></li>
+                    <li><i class="bok5">6</i><a  href="javascript:;">北上广不相信眼泪</a></li>
+                    <li><i class="bok5">7</i><a  href="javascript:;">灵魂摆渡2</a></li>
+                    <li><i class="bok5">8</i><a  href="javascript:;">野山鹰</a></li>
+
+
+                </ul>
+                <ul class="bok15 fl">
+                    <li><a class="bok16" href="javascript:;"></a></li>
+                    <li class="bok17"><a class="bok18" href="javascript:;">神剧亮了：PPT六分特辑</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bol">
+    <div class="bol1 clearfix">
+        <p class="bol3">推广广告</p>
+        <div class="bol2 fl">
+            <a class="bol10" href="javascript:;"></a>
+            <a class="bol11" href="javascript:;"></a>
+            <ul class="bol4">
+                <li><a class="bol5" href="javascript:;"></a></li>
+                <li><a class="bol6" href="javascript:;"></a></li>
+                <li><a class="bol7" href="javascript:;"></a></li>
+                <li><a class="bol8" href="javascript:;"></a></li>
+                <li><a class="bol9" href="javascript:;"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="boz">
+    <div class="boz1">
+        <div class="boz2 clearfix">
+            <div class="boz3 fl clearfix">
+                <h3 class="boz4 fl"><i class="boz5"></i>动漫<a href="javascript:;"> 更多></a></h3>
+                <ul class="boz6 fl">
+                    <li><a href="javascript:;">真人特摄</a><i></i></li>
+                    <li><a href="javascript:;">动画电影</a></li>
+                </ul>
+            </div>
+            <div class="boz7 fl">
+                <h3><i></i>少儿<a href="javascript:;"> 更多></a></h3>
+            </div>
+            <div class="boz8 fr">
+                <h3><i></i>教育<a href="javascript:;"> 更多></a></h3>
+            </div>
+        </div>
+        <div class="boz9 clearfix">
+            <ul class="boz10 fl">
+                <li><a class="boz11" href="javascript:;"></a></li>
+                <li class="boz12"><a href="javascript:;">航海王</a></li>
+            </ul>
+            <ul class="boz13 fl">
+                <li><a class="boz14" href="javascript:;"></a></li>
+                <li class="boz15"><a href="javascript:;">小巴林</a></li>
+            </ul>
+            <ul class="boz16 fl">
+                <li><a class="boz17" href="javascript:;"></a></li>
+                <li class="boz18"><a href="javascript:;">小花仙 第2季</a></li>
+            </ul>
+            <ul class="boz19 fl">
+                <li><a class="boz20" href="javascript:;"></a></li>
+                <li class="boz21"><a href="javascript:;">咕力咕力</a></li>
+            </ul>
+            <ul class="boz22 fl">
+                <li><a class="boz23" href="javascript:;"></a></li>
+                <li class="boz24"><a href="javascript:;">精灵梦叶罗丽 第3部</a></li>
+            </ul>
+            <ul class="boz25 fl">
+                <li><a class="boz26" href="javascript:;"></a></li>
+                <li class="boz27"><a href="javascript:;">新大头儿子小头爸爸 第..</a></li>
+            </ul>
+            <ul class="boz28 fl">
+                <li><a class="boz29" href="javascript:;"></a></li>
+                <li class="boz30"><a href="javascript:;">幼儿启蒙专区</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="bocc">
+    <div class="bocc1">
+        <div class="bocc2 clearfix">
+            <div class="bocc3 fl clearfix">
+                <h3 class="bocc4 fl"><i class="bocc5"></i>体育<a href="javascript:;"> 更多></a></h3>
+                <ul class="bocc6 fl">
+                    <li><a href="javascript:;">足球</a><i></i></li>
+                    <li><a href="javascript:;">篮球</a><i></i></li>
+                    <li><a href="javascript:;">美网</a><i></i></li>
+                    <li><a href="javascript:;">昆仑决</a></li>
+                </ul>
+            </div>
+            <div class="bocc7 fl">
+                <h3 class="fl"><i></i>音乐<a href="javascript:;"> 更多></a></h3>
+                <ul class="bocc6 fl">
+                    <li><a href="javascript:;">爱奇艺音乐榜</a></li>
+
+                </ul>
+            </div>
+            <div class="bocc8 fr">
+                <h3><i></i>时尚<a href="javascript:;"> 更多></a></h3>
+            </div>
+        </div>
+        <div class="bocc9 clearfix">
+            <div class="bocc10 fl clearfix">
+                <ul class="bocc11 fl">
+                    <li><a class="bocc12" href="javascript:;"></a></li>
+                    <li class="bocc13"><a href="javascript:;">双十一苏宁买舜天战恒大淘宝</a>
+                </ul>
+                <ul class="bocc14 fl">
+                    <li><a class="bocc15" href="javascript:;"></a></li>
+                    <li class="bocc16"><a href="javascript:;">2015中超颁奖回放</a>
+                </ul>
+                <ul class="bocc17 fl">
+                    <li><a class="bocc18" href="javascript:;"></a></li>
+                    <li class="bocc19"><a href="javascript:;">C罗3分钟自拍105张</a>
+                </ul>
+                <ul class="bocc20 fl">
+                    <li><a class="bocc21" href="javascript:;"></a></li>
+                    <li class="bocc22"><a href="javascript:;">俄：兴奋剂指控毫无根据</a>
+                </ul>
+            </div>
+            <div class="bocc23 fl clearfix">
+                <ul class="bocc24 fl">
+                    <li><a class="bocc25" href="javascript:;"></a></li>
+                    <li class="bocc26"><a href="javascript:;">鹿晗-诺言 正式版</a>
+                </ul>
+                <ul class="bocc27 fl">
+                    <li><a class="bocc28" href="javascript:;"></a></li>
+                    <li class="bocc29"><a href="javascript:;">Bang My Head</a>
+                </ul>
+                <ul class="bocc30 fl">
+                    <li><a class="bocc31" href="javascript:;"></a></li>
+                    <li class="bocc32"><a href="javascript:;">田小姐-小幸运</a>
+                </ul>
+            </div>
+            <div class="bocc33 fr clearfix">
+                <ul class="bocc34 fl">
+                    <li><a class="bocc35" href="javascript:;"></a></li>
+                    <li class="bocc36"><a href="javascript:;">中国双住手维秘大秀后台</a>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="bon">
+    <div class="bon1 clearfix">
+        <div class="bon2 clearfix">
+            <div class="bon3 fl clearfix">
+                <h3 class="bon4 fl"><i class="bon5"></i>体育<a href="javascript:;"> 更多></a></h3>
+                <ul class="bon6 fl">
+                    <li><a href="javascript:;">孕期</a><i></i></li>
+                    <li><a href="javascript:;">分娩时刻</a><i></i></li>
+                    <li><a href="javascript:;">早教课堂</a></li>
+                </ul>
+            </div>
+            <div class="bon7 fl">
+                <h3 class="fl"><i></i>生活<a href="javascript:;"> 更多></a></h3>
+                <ul class="bon6 fl">
+                    <li><a href="javascript:;">悦活汇</a><i></i></li>
+                    <li><a href="javascript:;">美食专区</a><i></i></li>
+                    <li><a href="javascript:;">健身季</a></li>
+
+                </ul>
+            </div>
+            <div class="bon8 fr">
+                <h3><i></i>健康<a href="javascript:;"> 更多></a></h3>
+            </div>
+        </div>
+        <div class="bon9 clearfix">
+            <ul class="bon10 fl">
+                <li><a class="bon11" href="javascript:;"></a></li>
+                <li class="bon12"><a href="javascript:;">人工喂养每餐吃多少奶最好</a></li>
+            </ul>
+            <ul class="bon13 fl">
+                <li><a class="bon14" href="javascript:;"></a></li>
+                <li class="bon15"><a href="javascript:;">挑选纸尿裤全攻略</a></li>
+            </ul>
+            <ul class="bon16 fl">
+                <li><a class="bon17" href="javascript:;"></a></li>
+                <li class="bon18"><a href="javascript:;">红酒当酱油才是好厨师</a></li>
+            </ul>
+            <ul class="bon19 fl">
+                <li><a class="bon20" href="javascript:;"></a></li>
+                <li class="bon21"><a href="javascript:;">靖王王凯演绎男友力MAX</a></li>
+            </ul>
+            <ul class="bon22 fl">
+                <li><a class="bon23" href="javascript:;"></a></li>
+                <li class="bon24"><a href="javascript:;">这些行为也是性骚扰</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bom">
+    <div class="bom1 clearfix">
+        <div class="bom2 clearfix">
+            <div class="bom3 fl clearfix">
+                <h3 class="bom4 fl"><i class="bom5"></i>科技<a href="javascript:;"> 更多></a></h3>
+                <ul class="bom6 fl">
+                    <li><a href="javascript:;">极客说</a><i></i></li>
+                    <li><a href="javascript:;">前沿技术</a><i></i></li>
+                    <li><a href="javascript:;">风云榜</a></li>
+                </ul>
+            </div>
+            <div class="bom7 fl">
+                <h3 class="fl"><i></i>汽车<a href="javascript:;"> 更多></a></h3>
+                <ul class="bom6 fl">
+                    <li><a href="javascript:;">保时捷</a><i></i></li>
+                    <li><a href="javascript:;">法拉利</a><i></i></li>
+                    <li><a href="javascript:;">奥迪S8</a></li>
+
+                </ul>
+            </div>
+            <div class="bom8 fr">
+                <h3><i></i>财经<a href="javascript:;"> 更多></a></h3>
+            </div>
+        </div>
+        <div class="bom9 clearfix">
+            <ul class="bom10 fl">
+                <li><a class="bom11" href="javascript:;"></a></li>
+                <li class="bom12"><a href="javascript:;">电子经济是游戏也是生意</a></li>
+            </ul>
+            <ul class="bom13 fl">
+                <li><a class="bom14" href="javascript:;"></a></li>
+                <li class="bom15"><a href="javascript:;">亚麻里研究出可飙车机器人</a></li>
+            </ul>
+            <ul class="bom16 fl">
+                <li><a class="bom17" href="javascript:;"></a></li>
+                <li class="bom18"><a href="javascript:;">路虎发现神行中期改款</a></li>
+            </ul>
+            <ul class="bom19 fl">
+                <li><a class="bom20" href="javascript:;"></a></li>
+                <li class="bom21"><a href="javascript:;">法拉利 F12 TDF官方视频</a></li>
+            </ul>
+            <ul class="bom22 fr">
+                <li><a class="bom23" href="javascript:;"></a></li>
+                <li class="bom24"><a href="javascript:;">三个最烂行业的逆行者</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bqq">
+    <div class="bqq1 clearfix">
+        <div class="bqq2 clearfix">
+            <div class="bqq3 fl clearfix">
+                <h3 class="bqq4 fl"><i class="bqq5"></i>旅游<a href="javascript:;"> 更多></a></h3>
+                <ul class="bqq6 fl">
+                    <li><a href="javascript:;">翻滚吧地球</a><i></i></li>
+                    <li><a href="javascript:;">XFUN吃货俱乐部</a><i></i></li>
+                    <li><a href="javascript:;">风云俱乐部</a></li>
+                </ul>
+            </div>
+            <div class="bqq7 fl">
+                <h3 class="fl"><i></i>纪录片<a href="javascript:;"> 更多></a></h3>
+                <ul class="bqq6 fl">
+                    <li><a href="javascript:;">VIP精选</a><i></i></li>
+                    <li><a href="javascript:;">天罚</a><i></i></li>
+                    <li><a href="javascript:;">热记录</a></li>
+
+                </ul>
+            </div>
+            <div class="bqq8 fr">
+                <h3><i></i>军事<a href="javascript:;"> 更多></a></h3>
+            </div>
+        </div>
+        <div class="bqq9 clearfix">
+            <ul class="bqq10 fl">
+                <li><a class="bqq11" href="javascript:;"></a></li>
+                <li class="bqq12"><a href="javascript:;">巴黎地下藏尸洞胆小勿入</a></li>
+            </ul>
+            <ul class="bqq13 fl">
+                <li><a class="bqq14" href="javascript:;"></a></li>
+                <li class="bqq15"><a href="javascript:;">探索即将灭绝的日本忍者</a></li>
+            </ul>
+            <ul class="bqq16 fl">
+                <li><a class="bqq17" href="javascript:;"></a></li>
+                <li class="bqq18"><a href="javascript:;">BBC：地球脉动-未来</a></li>
+            </ul>
+            <ul class="bqq19 fl">
+                <li><a class="bqq20" href="javascript:;"></a></li>
+                <li class="bqq21"><a href="javascript:;">城会玩身体吸住大理石</a></li>
+            </ul>
+            <ul class="bqq22 fr">
+                <li><a class="bqq23" href="javascript:;"></a></li>
+                <li class="bqq24"><a href="javascript:;">UFO引发半个美国恐慌</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bww">
+    <div class="bww1 clearfix">
+        <div class="boww2 clearfix">
+            <div class="bww3 clearfix fl">
+                <h3><i></i>游戏<a href="javascript:;"> 更多></a></h3>
+                <ul class="bww4 fl">
+                    <li><a href="javascript:;">我的世界</a><i></i></li>
+                    <li><a href="javascript:;">史丹利快报</a><i></i></li>
+                    <li><a href="javascript:;">天策最脏教学</a><i></i></li>
+                    <li><a href="javascript:;">秀你一脸</a></li>
+                </ul>
+            </div>
+            <div class="bww5 clearfix fr">
+                <h3><i></i>PPS奇秀<a href="javascript:;"> 零距离互动></a></h3>
+                <ul class="bww6 fl">
+                    <li><a href="javascript:;">奇秀新星</a><i></i></li>
+                    <li><a href="javascript:;">美女</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bww7 clearfix">
+            <ul class="bww8 fl">
+                <li><a class="bww9" href="javascript:;"></a></li>
+                <li class="bww10"><a href="javascript:;">阿津【噩梦之屋2】第4集...</a><p><i></i>阿津实况</p></li>
+            </ul>
+            <ul class="bww11 fl">
+                <li><a class="bww12" href="javascript:;"></a></li>
+                <li class="bww13"><a href="javascript:;">硬汉阿雷求生之路2欢乐...</a><p><i></i>硬汉阿雷</p></li>
+            </ul>
+            <ul class="bww14 fl">
+                <li><a class="bww15" href="javascript:;"></a></li>
+                <li class="bww16"><a href="javascript:;">那个叫来自野的男人死了</a><p><i></i>NEO牛男</p></li>
+            </ul>
+            <ul class="bww17 fl">
+                <li><a class="bww18" href="javascript:;"></a></li>
+                <li class="bww19"><a href="javascript:;">央央长乐未央</a><p><i></i>1019人在线观看</p></li>
+            </ul>
+            <ul class="bww20 fl">
+                <li><a class="bww21" href="javascript:;"></a></li>
+                <li class="bww22"><a href="javascript:;">吃土少女求抱抱-西瓜</a><p><i></i>77人在线观看</p></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bee">
+    <div class="bee1 clearfix">
+        <ul class="bee2 fl">
+            <li><a href="javascript:;"></a></li>
+        </ul>
+        <ul class="bee3 fl">
+            <li><a href="javascript:;"></a></li>
+        </ul>
+        <ul class="bee4 fl">
+            <li><a href="javascript:;"></a></li>
+        </ul>
+        <ul class="bee5 fl">
+            <li><a href="javascript:;"></a></li>
+        </ul>
+        <ul class="bee6 fl">
+            <li><a href="javascript:;"></a></li>
+        </ul>
+    </div>
+</div>
+<div class="brr">
+    <div class="brr1">
+        <ul class="brr2">
+            <li><a href="javascript:;"></a></li>
+        </ul>
+    </div>
+</div>
+<div class="btt">
+    <div class="btt1 clearfix">
+        <div class="btt2 fl clearfix">
+            <div class="btt3 fl">合作伙伴<a href="javascript:;"> 更多></a></div>
+            <ul class="btt4 fl">
+                <li><a href="javascript:;">万达电影网</a></li>
+                <li><a href="javascript:;">华策影视</a></li>
+                <li><a href="javascript:;">百度V计划</a></li>
+                <li><a href="javascript:;">智能电视网</a></li>
+            </ul>
+            <ul class="btt4 fl">
+                <li><a href="javascript:;">华谊兄弟</a></li>
+                <li><a href="javascript:;">百老汇</a></li>
+                <li><a href="javascript:;">央广视讯</a></li>
+            </ul>
+            <ul class="btt4 fl">
+                <li><a href="javascript:;">星美</a></li>
+                <li><a href="javascript:;">百度视频</a></li>
+                <li><a href="javascript:;">华录百纳</a></li>
+            </ul>
+            <ul class="btt4 fl">
+                <li><a href="javascript:;">光线影业</a></li>
+                <li><a href="javascript:;">百度百科</a></li>
+                <li><a href="javascript:;">百度贴吧</a></li>
+            </ul>
+            <ul class="btt4 fl">
+                <li><a href="javascript:;">电影网</a></li>
+                <li><a href="javascript:;">hao123</a></li>
+                <li><a href="javascript:;">爱奇艺天猫店</a></li>
+            </ul>
+        </div>
+        <div class="btt5 fr clearfix">
+            <div class="btt3 fl">爱奇艺动态<a href="javascript:;"> 更多></a></div>
+            <ul class="btt4 fl">
+                <li><a href="javascript:;">爱奇艺影业与china 3D战略合作</a></li>
+                <li><a href="javascript:;">爱奇艺与NBC环球达成版权合作</a></li>
+                <li><a href="javascript:;">《蜀山战纪》上线爱奇艺VIP会员</a></li>
+            </ul>
+            <ul class="btt4 fl">
+                <li><a href="javascript:;">爱奇艺发布音频水印技术</a></li>
+                <li><a href="javascript:;">爱奇艺获网络节目评选21项大奖</a></li>
+                <li><a href="javascript:;">爱奇艺公布30+超级网剧计划</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="byy">
+    <div class="byy1">
+        <hr/>
+        <p class="byy2"><a href="javascript:;">公司介绍 |</a><a href="javascript:;"> 新闻动态 |</a><a href="javascript:;"> 联系方式 |</a><a href="javascript:;"> 招聘英才 |</a>
+            <a href="javascript:;">爱奇艺实验室</a><a href="javascript:;"> 开放平台 |</a><a href="javascript:;"> 应用商店 |</a><a href="javascript:;"> 爱奇艺论坛 |</a>
+            <a href="javascript:;">帮助与反馈</a><a href="javascript:;"> 侵权投诉 |</a><a href="javascript:;"> About Us |</a>
+        </p>
+        <p class="byy3">违法不良信息举报电话：400-800-7171<i>举报邮箱：举报365@qiyi.com</i></p>
+        <p class="byy4">京网文[2015]0652-282号 <i class="byy5"></i>中国互联网诚信联盟<i class="byy6"></i>互联网违法和不良信息举报中心 信息网络传播室听节目许可证0110544号 广播电视之作许可证</p>
+        <p class="byy7">京ICP证10636号<i><span></span>经营性网站备案信息 京公网安备 1101025112000026号  经营电信业务信息许可证B25102555 互联网信息许可证信息(京)2013-5-6</i></p>
+        <p class="byy8">出版物经营许可证</p>
+        <p class="byy9">Copyright@ 2015 爱奇艺All Rights Reserved</p>
+    </div>
+</div>
+</body>
+</html>

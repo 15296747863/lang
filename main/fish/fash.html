@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{ padding:0; margin:0;}
+	body{background:#333;}
+	canvas{ display:block; margin:0 auto; background:url(img/game_bg_2_hd.jpg);}
+</style>
+<script src="js/fish.js"></script>
+<script src="js/source.js"></script>
+<script src="js/readImage.js"></script>
+<script src="js/cannon.js"></script>
+<script src="js/bullet.js"></script>
+<script src="js/diefish.js"></script>
+<script src="js/coin.js"></script>
+<script src="js/web.js"></script>
+<script>
+	//保存资源
+	var JSON={};
+	
+	function d2a(n){
+		return Math.PI/180*n;	
+	}
+	function a2d(n){
+		return 180/Math.PI*n;	
+	}
+	
+	function rnd(n,m){
+		return parseInt(Math.random()*(m-n)+n);	
+	}
+	
+	
+
+	window.onload=function(){
+		var oC=document.querySelector('canvas');
+		var gd=oC.getContext('2d');
+		
+		//载入资源  资源列表,加载完成回调函数,加载进度函数
+		loadImage(arrSource,function(){
+
+			var oCannon=new Cannon(7);
+			//存一组炮弹
+			var aBullet=[];
+			
+			//存一组鱼
+			var aFish=[];
+			
+			//保存死鱼
+			var aDiefish=[];
+			
+			//存一组金币
+			var aCoin=[];
+			
+			//保存渔网
+			var aWeb=[];
+			
+			setInterval(function(){
+				
+				if(Math.random()<0.05){
+					var f1=new Fish(rnd(1,6));
+					
+					if(Math.random()<0.5){
+						f1.rotate=rnd(-45,45);
+						f1.x=-50;
+					}else{
+						f1.rotate=rnd(135,225);
+						f1.x=oC.width+50;	
+						f1.scale=-1;
+					}
+					
+					f1.y=rnd(100,500);
+					aFish.push(f1);	
+				}
+				
+				
+				gd.clearRect(0,0,oC.width,oC.height);
+				//画鱼
+				for(var i=0; i<aFish.length;i++){
+					aFish[i].draw(gd);
+				}
+				
+				//画金币
+				for(var i=0; i<aCoin.length;i++){
+					aCoin[i].draw(gd);
+				}
+				
+				//画炮台
+				gd.drawImage(JSON['bottom'],0,0,765,70,5,530,765,70);	
+				
+				
+				//画炮弹
+				for(var i=0; i<aBullet.length;i++){
+					aBullet[i].draw(gd);
+				}
+				
+				//画炮筒
+				oCannon.draw(gd);
+				
+				
+				//画死鱼
+				for(var i =0; i<aDiefish.length;i++){
+					aDiefish[i].draw(gd);	
+				}
+				
+				//画渔网
+				for(var i=0; i<aWeb.length;i++){
+					aWeb[i].draw(gd);
+				}
+				
+				
+				//判断是否打中
+				for(var i=0; i<aFish.length;i++){
+					for(var j=0; j<aBullet.length;j++){
+						if(aFish[i].isDie(aBullet[j].x,aBullet[j].y) && aFish[i].y<500){
+							//创建死鱼
+							var dieFish=new Diefish(aFish[i].type);
+							dieFish.w=aFish[i].w;
+							dieFish.h=aFish[i].h;
+							dieFish.x=aFish[i].x;
+							dieFish.y=aFish[i].y;
+							dieFish.rotate=aFish[i].rotate;
+							aDiefish.push(dieFish);
+							//鱼消失
+							setTimeout(function(){
+								aDiefish.shift();	
+							},1000);
+							
+							//生成金币
+							var oCoin=new Coin(aFish[i].type);
+							oCoin.x=aFish[i].x;
+							oCoin.y=aFish[i].y;
+							
+							aCoin.push(oCoin);
+							
+							//金币消失
+							setTimeout(function(){
+								aCoin.shift();	
+							},1000);
+							
+							//生成渔网
+							var oWeb=new Web(aBullet[j].type);
+							oWeb.x=aFish[i].x;
+							oWeb.y=aFish[i].y;
+							aWeb.push(oWeb);
+							
+							//渔网消失
+							setTimeout(function(){
+								aWeb.shift();
+							},700);
+							
+							
+							
+							//催毁炮弹
+							aBullet.splice(j,1);
+							
+							//删除鱼
+							aFish.splice(i,1);
+							
+							
+							
+						}							
+					}	
+				}
+				
+				
+				//性能优化
+				for(var i=0; i<aFish.length;i++){
+					if(aFish[i].x<-50||aFish[i].x>oC.width+50 || aFish[i].y<-50 || aFish[i].y>oC.height){
+						aFish.splice(i,1);
+						i--;
+					}
+				}
+				
+				for(var i=0; i<aBullet.length;i++){
+					if(aBullet[i].x<-50||aBullet[i].x>oC.width+50 || aBullet[i].y<-50 || aBullet[i].y>oC.height){
+						aBullet.splice(i,1);
+						i--;
+					}
+				}
+				
+				
+				console.log(aBullet.length);
+				
+				
+			},16);
+			
+			
+			//给画布加点击事件
+			var cannonX=oCannon.x;
+			var cannonY=oCannon.y;
+			oC.onclick=function(ev){
+				var evX=ev.clientX-oC.offsetLeft;
+				var evY=ev.clientY-oC.offsetTop;
+				
+				var a=cannonX-evX;
+				var b=cannonY-evY;
+				
+				var d=Math.atan2(a,b);
+				
+				oCannon.rotate=a2d(-d);
+				
+				oCannon.move();
+				
+				var oBullet=new Bullet(oCannon.type);
+				oBullet.rotate=oCannon.rotate;
+				aBullet.push(oBullet);
+				
+				//声音
+				var oA=new Audio();
+				oA.src='snd/cannon.mp3';
+				oA.play();
+				
+				
+			};
+			
+			
+			
+		},function(scale){
+			//读取过程
+			//scale 0-1
+		});			
+	};
+</script>
+</head>
+
+<body>
+	<canvas width="800" height="600"></canvas>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

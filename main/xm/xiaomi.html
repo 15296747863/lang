@@ -1,0 +1,779 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet"/>
+<style>
+.box{width:100%; height:36px; font-size:12px; background:#fafafa; border-bottom:1px solid #dfdfdf; }
+.box1{width:930px; margin:0 auto;}
+.box1 li{padding-top:10px;}
+.box1 li a{border-right:1px solid #dfdfdf;  padding:0 16px 0 13px; color:#8c8c8c;}
+.box1 .aa{border-right:none;}
+.box .aaa{padding-left:0;}
+.box .aaaa{padding-left:16px; padding-right:0;}
+
+.box2{width:930px; margin:0 auto; position: relative;}
+.box2 h1{width:70px; height:70px; background:url(img/2.png) no-repeat; text-indent:-9999em; margin-top:25px;}
+.box3 p{ font-size:12px; color:#8c8c8c; background:url(img/1.png) no-repeat 420px 0; padding:0 0 2px 22px; margin-top:23px; text-align:right;}
+.buy-car{ width:109px; height:40px; line-height:40px; font-size:12px; color:#333; background:url(../img/buy-car.png) no-repeat 34px center #ffdb3d; text-align:center; padding-left:17px; margin-left:10px;}
+
+
+.search{ margin-top:17px;}
+.box4{ width:930px; margin:15px auto 0;}
+.nav ul{ width:930px; height:50px; line-height:50px; background:#404144;}
+.nav ul li{ float:left; padding-right:22px; height:50px;}
+.nav ul li a{color:#fff; font-size:14px; font-family:'Microsoft Yahei';}
+.nav ul .first{ width:206px; background:#ff4a00; font-size:17px; height:50px; padding-left:20px;}
+.nav ul .sencond{}
+
+
+
+
+.pro-l{ width:246px; border:1px solid #dfdfdf; border-top:none; font-family:'微软雅黑';}
+.pro-l li{ width:226px; height:73px; padding-left:20px; border-bottom:1px solid #dfdfdf;}
+.pro-l .last{ border-bottom:none;}
+.pro-l h3{ font-size:12px; color:#ff4a4f; font-weight:bold; padding:18px 0 6px 0;}
+.pro-l a{ font-size:12px; color:#6d6d6d;}
+.pro-bon{border:1px solid #dfdfdf; border-left:none; }
+.pro-bon .second{ border-left:1px solid #dfdfdf; border-right:1px solid #dfdfdf;}
+
+.wo{width:930px; height:21px; margin:0 auto; text-aline:center; padding-top:23px; padding-bottom:16px;}
+.wo1{font-size:17px; color:#333333; font-weight:bold;}
+.wo11{font-size:13px; color:#6d6d6d;}
+.wo111{width:64px; height:20px; background:url(img/4.png);}
+.ww{width:930px; height:310px; margin:0 auto;}
+.ww1{width:310px; height:65px; border:1px solid #dfdfdf; background:url(img/1.jpg) no-repeat 72px 27px; text-align:center; color:#000; font-size:15px; font-weight:bold; padding-top:245px; line-height:23px;}
+.ww3{font-size:13px; color:#8c8c8c;}
+.ww4{width:310px; height:65px; border:1px solid #dfdfdf; background:url(img/2.jpg) no-repeat 50px 84px; text-align:center; color:#000; font-size:15px; font-weight:bold; padding-top:245px; line-height:23px; border-left:none; border-right:none;}
+.ww6{width:300px; height:65px; border:1px solid #dfdfdf; background:url(img/3.jpg) no-repeat 50px 40px; text-align:center; color:#000; font-size:15px; font-weight:bold; padding-top:245px; line-height:23px;}
+.ee{width:930px; height:65px; margin:0 auto;}
+.ee1{font-size:18px; font-weight:bold; padding-top:28px;}
+.ee2{display:block; background:url(img/5.png) no-repeat right 33px; font-size:15px; padding-top:32px; padding-right:12px;}
+.rr{width:100%; height:1021px;}
+.rr{width:930px; border:1px solid #dfdfdf; margin:0 auto;}
+.rrr{width:650px;}
+.rr1{width:618px; height:302px; border:1px solid #dfdfdf; background:url(img/8.jpg) no-repeat 270px 94px; padding-top:64px; padding-left:31px; border-right:none;}
+.rr2{font-size:36px; font-weight:bold; line-height:45px;}
+.rr3{font-size:15px; color:#9f9f9f; font-weight:bold;}
+.rr4{font-size:22px; padding-top:15px;}
+.rr5{width:310px; height:310px; border:1px solid #cfcfcf; background:url(img/9.jpg) no-repeat 75px 88px; padding-top:32px; padding-left:30px; border-top:none;}
+.rr6{font-size:14px; font-weight:bold; line-height:22px;}
+.rr7{font-size:14px; font-weight:bold;}
+.rr8{font-weight:bold; color:#8c8c8c; text-decoration:line-through;}
+.rr9{position:relative; left:212px; top:-70px; width:72px; height:20px; background:#f32f39; color:#FFF; text-align:center; line-height:20px;}
+
+.rr10{width:276px; height:140px; border:1px solid #dfdfdf; border-top:none; border-left:none;
+background:url(img/10.jpg) no-repeat 188px 15px; padding-top:30px; padding-right:30px;}
+.rrr1{font-size:13px; font-weight:bold; padding-left:30px; line-height:23px;}
+.rrr2{font-size:13px; font-weight:bold; padding-left:30px;}
+
+.rr11{width:306px; height:171px; border:1px solid #dfdfdf; border-left:none; border-top:none; background:url(img/11.jpg) no-repeat 188px 15px;}
+.rrr3{font-size:13px; font-weight:bold; padding-left:30px; line-height:23px; padding-top:30px; padding-left:30px;}
+.rrr4{font-size:13px; font-weight:bold; padding-left:30px;}
+.rr12{width:340px; height:310px; border:1px solid #dfdfdf; border-top:none; background:url(img/12.jpg) no-repeat 60px 85px;}
+.rrr5{font-size:13px; font-weight:bold; line-height:23px; padding-top:30px; padding-left:30px;}
+.rrr6{font-size:13px; font-weight:bold; padding-left:30px;}
+
+
+.rr13{width:306px; height:310px; border:1px solid #dfdfdf; border-top:none; border-left:none; background:url(img/13.jpg) no-repeat 106px 84px;}
+.rrr7{font-size:13px; font-weight:bold; line-height:23px; padding-top:30px; padding-left:30px;}
+.rrr8{font-size:13px; font-weight:bold; padding-left:30px;}
+
+.rr14{width:260px; height:96px; border:1px solid #dfdfdf; margin-top:-1022px; margin-right:-280px; background:url(file:///C|/Users/84676/Pictures/Saved%20Pictures/%E6%9C%AA%E6%A0%87%E9%A2%98-28.png) no-repeat 188px 12px; padding-top:32px; padding-left:20px;  background-color:#fafafa;}
+.rrr9{font-size:20px; color:#000; line-height:25px;}
+.rrr10{font-size:13px; color:#f42f39; line-height:21px;}
+.rrrr1{text-decoration:line-through; color:#8c8c8c;}
+.rrr11{font-size:13px; color:#8c8c8c; font-weight:bold;}
+.rrr12{width:72px; height:20px; background:#f32f39; color:#FFF; text-align:center; line-height:20px; position:relative; left:8px; top:-95px;}
+
+
+.rr15{width:260px; height:96px; border:1px solid #dfdfdf; margin-top:-893px; margin-right:-280px; background:url(img/15.png) no-repeat 175px 34px; padding-top:32px; padding-left:20px;  background-color:#fafafa;}
+.rrr13{font-size:20px; line-height:25px;}
+.rrr14{font-size:13px; color:#6d6d6d; line-height:21px;}
+.rrr15{font-size:13px; color:#6d6d6d; font-weight:bold;}
+
+
+
+.rr16{width:260px; height:96px; border:1px solid #dfdfdf; margin-top:-764px; margin-right:-280px; background:url(img/16.png) no-repeat 180px 33px;  padding-top:32px; padding-left:20px;  background-color:#fafafa;}
+.rrr17{font-size:20px; line-height:25px;}
+.rrr18{font-size:13px; color:#6d6d6d; line-height:21px;}
+.rrr19{font-size:13px; color:#6d6d6d; font-weight:bold;}
+
+.pp{width:280px; height:300px; border:1px solid #dfdfdf; margin-right:-281px; margin-top:-635px; background:url(img/17.png) no-repeat 15px 60px; background-color:#fafafa;}
+.pp1{font-size:20px; color:#000; padding-top:30px; padding-left:28px;}
+.pp2{font-size:13px; color:#6d6d6d; padding-top:120px; padding-left:28px; font-weight:bold;}
+.ppp1{font-size:18px; color:#6d6d6d;}
+.pp3{width:250px; height:40px; background-color:#dcdee4; color:#FFF; text-align:center; line-height:40px; margin-left:15px;}
+
+.qqq{width:280px; height:333px; border:1px solid #dfdfdf; margin-top:66px; background:#fafafa;}
+.qqq2{font-size:20px; padding-left:30px; padding-top:50px;}
+.qqq1{width:250px; height:185px; font-size:14px; color:#000; margin-left:15px; padding-top:20px;}
+.qqq3{width:220px; height:48px; border-bottom:1px solid #dfdfdf; line-height:48px; background:url(file:///C|/Users/84676/Pictures/Saved%20Pictures/%E6%9C%AA%E6%A0%87%E9%A2%98-33.png) no-repeat 238px center; padding-left:30px;}
+
+.qqq4{width:220px; height:48px; border-bottom:1px solid #dfdfdf; line-height:48px; background:url(file:///C|/Users/84676/Pictures/Saved%20Pictures/%E6%9C%AA%E6%A0%87%E9%A2%98-33.png) no-repeat 238px center; padding-left:30px;}
+
+.qqq5{width:220px; height:48px; border-bottom:1px solid #dfdfdf; line-height:48px; background:url(file:///C|/Users/84676/Pictures/Saved%20Pictures/%E6%9C%AA%E6%A0%87%E9%A2%98-33.png) no-repeat 238px center; padding-left:30px; border-bottom:none;}
+.qqq6{width:220px; height:48px; border-bottom:1px solid #dfdfdf; line-height:48px; background:url(file:///C|/Users/84676/Pictures/Saved%20Pictures/%E6%9C%AA%E6%A0%87%E9%A2%98-33.png) no-repeat 238px center; padding-left:30px;}
+.www1{font-size:18px; line-height:65px; font-weight:bold;}
+.dd{width:620px; height:620px; border:1px solid #dfdfdf; line-height:23px;}
+.dd1{width:592px; height:245px; border-bottom:1px solid #dfdfdf; background:url(img/20.jpg) no-repeat 305px 20px; padding-top:63px; padding-left:28px;}
+.dd2{font-size:35px; font-weight:bold;}
+.dd3{font-size:14px; color:#878787; padding-top:13px; padding-bottom:24px;}
+.dd4{font-size:24px;}
+.dd5{width:278px; height:283px; border-right:1px solid #dfdfdf; background:url(img/21.jpg) no-repeat 74px 87px; font-size:13px; padding-top:28px; padding-left:27px; font-weight:bold;}
+
+.dd8{width:313px; height:310px; margin-top:-316px;background:url(img/22.jpg) no-repeat 97px 85px; padding-top:32px; font-weight:bold; line-height:23px;}
+.dd9{ padding-left:28px;}
+.dd10{ padding-left:28px;}
+.ff{width:308px; height:620px; border:1px solid #dfdfdf; margin-top:-383px; margin-left:313px;}
+.ff1{width:278px; height:103px; border-bottom:1px solid #dfdfdf; font-size:26px; padding-left:30px; line-height:103px;}
+.ff3{color:#ff4a4f;}
+
+.ff4{width:308px; height:103px; border-bottom:1px solid #dfdfdf; background:url(img/23.png) no-repeat 220px 18px;}
+.ff5{background:url(img/24.png) no-repeat 33px 20px; padding-left:60px; padding-top:30px;}
+.ff6{ padding-left:60px; padding-top:0px;}
+
+
+.ff7{width:308px; height:103px; border-bottom:1px solid #dfdfdf; background:url(img/25.png) no-repeat 220px 18px;}
+.ff8{width:308px; height:103px; border-bottom:1px solid #dfdfdf; background:url(img/26.png) no-repeat 220px 18px;}
+.ff9{width:308px; height:103px; border-bottom:1px solid #dfdfdf; background:url(img/27.png) no-repeat 220px 18px;}
+.ff10{width:308px; height:103px; border-bottom:1px solid #dfdfdf; background:url(img/28.png) no-repeat 220px 18px; border-bottom:none;}
+.ff11{background:url(img/29.png) no-repeat 33px 20px; padding-left:60px; padding-top:30px;}
+.ff12{background:url(img/30.png) no-repeat 33px 20px; padding-left:60px; padding-top:30px;}
+.ff13{background:url(img/31.png) no-repeat 33px 20px; padding-left:60px; padding-top:30px;}
+.ff14{background:url(img/32.png) no-repeat 33px 20px; padding-left:60px; padding-top:30px;}
+.pop{width:930px; height:35px; margin-top:3px; margin-left:-308px; font-size:20px; padding-top:30px;}
+.ioi{width:930px; height:410px;}
+.io{width:283px; height:380px; border:1px solid #dfdfdf; background:url(img/33.jpg) no-repeat 106px 138px; font-size:15px; padding-top:30px; padding-left:26px; margin-left:-311px;}
+.io2{background:url(img/34.png) no-repeat 0 center; color:#8c8c8c; font-size:12px; padding-left:65px;}
+.io4{width:278px; height:45px; background:#f3f3f3; font-size:14px; color:#6d6d6d; margin-top:244px; margin-left:-16px; padding-top:10px; padding-left:10px;}
+
+
+.io5{width:283px; height:380px; border:1px solid #dfdfdf; background:url(img/35.jpg) no-repeat 60px 150px; font-size:15px; padding-top:30px; padding-left:26px; border-left:none; border-right:none;}
+.io7{background:url(img/37.png) no-repeat 0 center; color:#8c8c8c; font-size:12px; padding-left:65px;}
+.io9{width:278px; height:45px; background:#f3f3f3; font-size:14px; color:#6d6d6d; margin-top:244px; margin-left:-16px; padding-top:10px; padding-left:10px;}
+
+
+.io10{width:283px; height:380px; border:1px solid #dfdfdf; background:url(img/36.jpg) no-repeat 55px 155px; font-size:15px; padding-top:30px; padding-left:26px;}
+.io12{background:url(img/34.png) no-repeat 0 center; color:#8c8c8c; font-size:12px; padding-left:65px;}
+.io14{width:278px; height:45px; background:#f3f3f3; font-size:14px; color:#6d6d6d; margin-top:244px; margin-left:-16px; padding-top:10px; padding-left:10px;}
+.ooo{width:930px; height:35px; margin:0 -312px; font-size:20px; padding-top:30px;}
+.nn{width:930px; height:310px; margin-left:-311px;}
+.nn1{width:278px; height:275px; border:1px solid #dfdfdf; background:url(img/38.jpg) no-repeat 58px 130px; font-size:12px; padding-top:33px; padding-left:30px;}
+.nn2{color:#8c8c8c; text-decoration:line-through;}
+.nn3{width:70px; height:20px; background:#f32f39; color:#FFF; text-align:center; position:relative; top:-80px; left:160px;}
+
+.nn4{width:278px; height:275px; border:1px solid #dfdfdf; background:url(img/39.jpg) no-repeat 58px 130px; font-size:12px; padding-top:33px; padding-left:30px; border-left:none; border-right:none;}
+.nn5{color:#8c8c8c; text-decoration:line-through;}
+.nn6{width:70px; height:20px; background:#f32f39; color:#FFF; text-align:center; position:relative; top:-80px; left:160px;}
+
+.nn7{width:278px; height:275px; border:1px solid #dfdfdf; background:url(img/40.jpg) no-repeat 58px 100px; font-size:12px; padding-top:33px; padding-left:30px;}
+.nn8{color:#8c8c8c; text-decoration:line-through;}
+.nn9{width:70px; height:20px; background:#f32f39; color:#FFF; text-align:center; position:relative; top:-80px; left:160px;}
+.oopo{width:930px; height:35px; margin-left:-312px; font-size:20px; padding-top:30px;}
+.oop2{diaplay:block; font-size:14px;}
+.uuu{width:930px; height:410px; margin-left:-311px;}
+.uuu1{width:280px; height:377px; border:1px solid #dfdfdf; background:url(img/41.jpg) no-repeat 80px 135px; font-size:14px; padding-top:33px; padding-left:28px;}
+.uuu2{width:278px; height:45px; background:#f3f3f3; margin-top:242px; margin-left:-19px; padding-top:12px; padding-left:12px; color:#6d6d81;}
+
+.uuu3{width:280px; height:377px; border:1px solid #dfdfdf; background:url(img/42.jpg) no-repeat 80px 135px; font-size:14px; padding-top:33px; padding-left:28px; border-left:none; border-right:none;}
+.uuu4{width:278px; height:45px; background:#f3f3f3; margin-top:242px; margin-left:-19px; padding-top:12px; padding-left:12px; color:#6d6d81;}
+
+.uuu5{width:280px; height:377px; border:1px solid #dfdfdf; background:url(img/43.jpg) no-repeat 80px 135px; font-size:14px; padding-top:33px; padding-left:28px;}
+.uuu6{width:278px; height:45px; background:#f3f3f3; margin-top:242px; margin-left:-19px; padding-top:12px; padding-left:12px; color:#6d6d81;}
+.yu{width:930px; height:35px; margin-left:-312px; font-size:20px; padding-top:30px;}
+.yu1{diaplay:block; font-size:14px;}
+.zzz{width:930px; height:334px; margin-left:-312px;}
+.zzz1{width:281px; height:304px; border:1px solid #dfdfdf; font-size:15px; background:url(img/44.jpg) no-repeat 27px 97px; padding-top:30px; padding-left:27px;}
+.zzz2{width:281px; height:304px; border:1px solid #dfdfdf; font-size:15px; background:url(img/45.jpg) no-repeat 27px 97px; padding-top:30px; padding-left:27px; border-left:none; border-right:none;}
+.zzz3{width:281px; height:304px; border:1px solid #dfdfdf; font-size:15px; background:url(img/46.jpg) no-repeat 27px 97px; padding-top:30px; padding-left:27px;}
+.ppppp{width:930px; height:63px; margin-left:-310px;}
+.k{width:930px; height:155px; margin-left:-311px; background:#fafafa; font-size:15px; border-bottom:1px solid #dfdfdf;}
+.kk{width:146px; height:152px; background:url(file:///C|/Users/84676/Pictures/Saved%20Pictures/%E6%9C%AA%E6%A0%87%E9%A2%98-47.png) no-repeat 74px 44px; margin-right:25px;}
+.kk1{padding-left:40px; padding-top:92px;}
+
+.kk2{width:146px; height:152px; background:url(img/48.png) no-repeat 74px 44px; margin-right:25px;}
+.kk3{padding-left:40px; padding-top:92px;}
+
+.kk4{width:146px; height:152px; background:url(img/49.png) no-repeat 74px 44px; margin-right:25px;}
+.kk5{padding-left:40px; padding-top:92px;}
+
+.kk6{width:146px; height:152px; background:url(img/50.png) no-repeat 74px 44px; margin-right:25px;}
+.kk7{padding-left:40px; padding-top:92px;}
+
+.kk8{width:180px; height:152px; background:url(img/51.png) no-repeat 74px 44px; margin-right:25px;}
+.kk9{padding-left:40px; padding-top:92px;}
+.gg{width:930px; height:200px; margin-left:-311px; background:#fafafa;}
+.gg1{width:130px; height:103px; margin:45px 0 50px 0; padding-left:18px;}
+.gg2{font-size:18px; color:#000; line-height:36px;}
+
+.gg3{width:130px; height:103px; border-left:1px solid #dfdfdf; margin:45px 0 50px 0; padding-left:18px;}
+.gg4{width:130px; height:103px; border-left:1px solid #dfdfdf; margin:45px 0 50px 0; padding-left:18px;}
+.gg5{width:130px; height:103px; border-left:1px solid #dfdfdf; margin:45px 0 50px 0; padding-left:18px;}
+.gg6{width:130px; height:103px; border-left:1px solid #dfdfdf; margin:45px 0 50px 0; padding-left:18px;}
+.gg7{width:130px; height:103px; border-left:1px solid #dfdfdf; margin:45px 0 50px 0; padding-left:18px;}
+.gg8{width:120px; height:30px; background:#ff4a00; color:#FFF; text-align:center; line-height:30px;}
+.jj{width:930px; height:41px; margin-left:-311px; background:#fafafa; border-top:1px solid #dfdfdf; font-size:12px; padding-top:36px;}
+.bnbn{width:930px; height:20px; margin-left:-311px; background:#fafafa;}
+.img-box{width:682px; height:420px; position:absolute;}
+.bix1{position: absolute; left:360px; top:55px;}
+#btn{width:386px; height:40px; border:1px solid #ccc;}
+#span1{position:absolute; left:10px; top:13px; font-size:12px; color:#ccc;}
+.bix2{width:38px; height:40px; border:1px solid #ccc; position: absolute; left:387px; top:0px; background:url(img/54.png) no-repeat center center;}
+.bix4{width:20px; height:20px; display:block; background:url(img/55.png); position: absolute; left:786px; top:20px;}
+.active{background:#40412f;}
+
+</style>
+    <script src="jquery-1.7.2.js"></script>
+    <script src="jquery.SuperSlide.2.1.1.js"></script>
+    <script>
+        window.onload=function(){
+            var oT=document.getElementById('btn');
+            var oSpan=document.getElementById('span1');
+            oT.onfocus=function(){
+                oSpan.style.display='none';
+            };
+            oT.onblur=function(){
+                if(this.value==''){
+                    oSpan.style.display='block';
+                }
+            }
+            oSpan.onclick=function(){
+                oT.focus();
+            }
+        }
+        $(function(){
+            $('.bix5 li').mouseover(function(){
+                $('.bix5 li').attr('class','').eq($(this).index()).attr('class','active')
+            })
+        })
+        $(function(){
+            $('.focus').slide({
+                'type':'slide',
+                // 'targetCell': $('.img-box div'),
+                'titCell':$('.focus li'),
+                'titOnClassName':'active',
+                'mainCell':$('.img-box'),
+                'effect':'leftLoop',
+                'autoPlay':true,
+                'trigger':'click'
+            });
+        })
+    </script>
+</head>
+
+<body>
+<div class="box">
+<ul class="box1 clearfix">
+    	<li class="fl"><a href="#" class="aaa">小米网</a></li>
+        <li class="fl"><a href="#">MIUI</a></li>
+        <li class="fl"><a href="#">米聊</a></li>
+        <li class="fl"><a href="#">游戏</a></li>
+        <li class="fl"><a href="#">多看阅读</a></li>
+        <li class="fl"><a href="#">云服务</a></li>
+        <li class="fl"><a href="#">小米网移动版</a></li>
+        <li class="fl"><a href="#" class="aa">Select region</a></li>
+        <li class="fr"><a href="#" class="aa aaaa">注册</a></li>
+        <li class="fr"><a href="#">登录</a></li>
+        
+    </ul>	
+
+<div class="box2 clearfix">
+	<h1 class="fl"><a href="#">小米网</a></h1>
+    <div class="fr box3">
+    	<p><span class="bix4"></span>11月18日预约开放购买</p>
+        <div class="search clearfix">
+
+            <div class="bix1 fl">
+                <input type="text" id="btn"/>
+                <span id="span1">搜索你需要的商品</span>
+                <div class="bix2"></div>
+            </div>
+            <div class="buy-car fr">购物车</div>
+        </div>
+    </div>
+</div>
+
+<div class="box4">
+	<div class="nav">
+    	<ul class="clearfix">
+        	<li class="first"><a href="#">全部商品分类</a></li>
+            <div class="bix5">
+                <li class="sencond active"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;首页</a></li>
+                <li><a href="#">小米手机</a></li>
+                <li><a href="#">红米手机</a></li>
+                <li><a href="#">小米平板</a></li>
+                <li><a href="#">小米电视</a></li>
+                <li><a href="#">盒子</a></li>
+                <li><a href="#">路由器</a></li>
+                <li><a href="#">合约机</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">社区</a></li>
+            </div>
+
+        </ul>
+    </div>
+
+    <div class="pro-box clearfix">
+    	<ul class="fl pro-l">
+        	<li>
+            	<h3>购买手机</h3>
+                <div>
+                	<a href="#">小米4</a>
+                    <a href="#">小米3</a>
+                    <a href="#">红米</a>
+                    <a href="#">红米note</a>
+                </div>
+            </li>
+            <li>
+            	<h3>购买电视与平板</h3>
+                <div>
+                	<a href="#">小米电视</a>
+                    <a href="#">小米盒子</a>
+                    <a href="#">小米平板</a>
+                    
+                </div>
+            </li>
+            <li>
+            	<h3>后盖与个性化配件</h3>
+                <div>
+                	<a href="#">米键</a>
+                    <a href="#">后盖</a>
+                    <a href="#">贴纸</a>
+                    <a href="#">手机支架</a>
+                </div>
+            </li>
+            <li>
+            	<h3>保护套于贴膜</h3>
+                <div>
+                	<a href="#">保护套/保护壳</a>
+                    <a href="#">贴膜</a>
+                    <a href="#">防尘塞</a>
+                    
+                </div>
+            </li>
+            <li>
+            	<h3>移动电源与电池</h3>
+                <div>
+                	<a href="#">小米移动电源</a>
+                    <a href="#">电池</a>
+                    <a href="#">充电器</a>
+                    
+                </div>
+            </li>
+            <li>
+            	<h3>路由器与智能家庭</h3>
+                <div>
+                	<a href="#">小米路由器</a>
+                    <a href="#">随身WiFi</a>
+                    <a href="#">智能家庭</a>
+                   
+                </div>
+            </li>
+            <li>
+            	<h3>耳机与音响</h3>
+                <div>
+                	<a href="#">小米活塞耳机</a>
+                    <a href="#">更多耳机</a>
+                    <a href="#">音响</a>
+                   
+                </div>
+            </li>
+            <li class="last">
+            	<h3>小米生活方式</h3>
+                <div>
+                	<a href="#">小米手环</a>
+                    <a href="#">服务</a>
+                    <a href="#">血压计</a>
+                    <a href="#">米兔</a>
+                </div>
+            </li>
+        </ul>
+        <div class="fl pro-r">
+            <div class="focus">
+                <div class="img-box">
+                    <div><img src="img/1103MI4-s.jpg" alt=""></div>
+                    <div><img src="img/1104SXJ-s.jpg" alt=""></div>
+                    <div><img src="img/1104wan-s.jpg" alt=""></div>
+                    <div><img src="img/1105wxhd-s.jpg" alt=""></div>
+                </div>
+
+            </div>
+            <ul class="pro-bon clearfix">
+            	<li class="fl">
+                	<img src="img/5.jpg" alt="" />
+                </li>
+                <li class="fl second">
+                	<img src="img/6.jpg" alt="" />
+                </li>
+                <li class="fl">
+                	<img src="img/7.jpg" alt="" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="wo clearfix">
+<p class="wo1">小米明星单品<span class="wo11"> 根据机型选配件</span> <a href="#" class="wo111 fr"></a></p>
+
+</div>
+
+<div class="ww clearfix">
+<div class="ww1 fl">
+<p>10400mAh小米移动电源</p>
+<p class="ww3">全铝合金金属外壳,LG/三星等优质电芯</p>
+</div>
+
+<div class="ww4 fl">
+<p>小米盒子 新上市</p>
+<p class="ww3">4k网络机顶盒,随时看海量高清网络电影,电视剧。</p>
+</div>
+
+<div class="ww6 fl">
+<p>免费预约买小米平板</p>
+<p class="ww3">四核2.2GHz处理器,7.9英寸视网膜屏</p>
+</div>
+
+
+
+</div>
+
+<div class="ee clearfix">
+<p>
+<b class="ee1 fl">新品上架</b>
+<a href="#" class="ee2 fr">更多</a>
+  </p>
+
+</div>
+<div class="rr">
+<div class="rrr">
+<div class="rr1">
+<p class="rr2">iHealth智能血压计</p>
+<p class="rr3">父母在家一点就测 测量结果云端同步</p>
+<p class="rr4">199元</p>
+
+</div>
+
+<div class="rr5 fl">
+<p class="rr6">大人物米兔圆领套头卫衣</p>
+<P class="rr7">99元 <b class="rr8">129元</b></P>
+<div class="rr9">包邮</div>
+</div>
+
+<div class="rr10 fr">
+<p class="rrr1">QCY运动蓝牙耳机</p>
+<p class="rrr2">129元</p>
+</div>
+
+<div class="rr11 fr">
+<p class="rrr3">小米手机二合一镜头</p>
+<p class="rrr4">59元</p>
+
+</div>
+
+<div class="rr12 fl">
+<p class="rrr5">铁三角CLR100耳机</p>
+<p class="rrr6">118元</p>
+
+</div>
+
+<div class="rr13 fl">
+<p class="rrr7">红米至简翻盖支架保护套</p>
+<p class="rrr8">49元</p>
+
+</div>
+
+<div class="rr14 fr">
+<p class="rrr9">红米3D月球系列...</p>
+<P class="rrr10">29元 <b class="rrrr1">39元</b></P>
+<p class="rrr11">上午十点开始秒杀</p>
+<div class="rrr12">特价秒杀</div>
+</div>
+
+
+<div class="rr15 fr">
+<p class="rrr13">特惠配件套装</p>
+<P class="rrr14">手机必备配件组合购买</P>
+<p class="rrr15">实惠更优惠</p>
+</div>
+
+
+<div class="rr16 fr">
+<p class="rrr17">我爱酷玩</p>
+<P class="rrr18">邂逅炫酷的电子产品</P>
+<p class="rrr19">结交趣味相投的朋友</p>
+</div>
+
+
+<div class="pp fr">
+<p class="pp1">话费充值</p>
+<p class="pp2">实付价格：<b class="ppp1">98.4</b>元起</p>
+<div class="pp3">立即充值 </div>
+
+<div class="qqq fr">
+<p class="qqq2">新闻公告</p>
+<ul class="qqq1">
+<li  class="qqq3">企业用户采购通道</li>
+<li  class="qqq6">小米手机防伪查询</li>
+
+<li  class="qqq4">小米手机官翻版</li>
+<li  class="qqq5">小米3（64G）购机用户补偿</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+</div>
+
+<h3 class="www1">大家都喜欢</h3>
+
+<div class="dd clearfix">
+<ul class="dd1">
+<li class="dd2">小米T恤换季特卖</li>
+<li class="dd3">舒适纯棉面料 多色经图案</li>
+<li class="dd4">全场29元</li>
+
+</ul>
+<ul class="dd5">
+<li class="dd6">先锋SE-MJ512折叠式头戴耳机</li>
+<li class="dd7">168元</li>
+
+
+
+
+
+</ul>
+
+<ul class="dd8 fr">
+<li class="dd9">红米高透防划贴膜（单片装）</li>
+<li class="dd10">9.9元</li>
+<div class="ff clearfix">
+
+<ul class="ff1 fr">
+<li class="ff2"><b class="ff3">HOT</b>热销商品排行</li>
+</ul>
+
+<ul class="ff4 fr">
+<li class="ff5">5200mAh移动电源</li>
+<li class="ff6">49元</li>
+</ul>
+
+<ul class="ff7 fr">
+<li class="ff11">米键</li>
+<li class="ff6">4.9元</li>
+</ul>
+
+<ul class="ff8 fr">
+<li class="ff12">小蜜蜂手机支架</li>
+<li class="ff6">19元</li>
+</ul>
+
+<ul class="ff9 fr">
+<li class="ff13">USB数据线120cm</li>
+<li class="ff6">15元</li>
+</ul>
+
+<ul class="ff10 fr">
+<li class="ff14">八爪鱼相机支架</li>
+<li class="ff6">48元</li>
+</ul>
+
+</div>
+<div class="pop">热评产品</div>
+<div class="ioi clearfix">
+<ul class="io fl">
+<li class="io1">红米色彩主题后盖</li>
+<li class="io2">| 1231人好评</li>
+<li class="io3">39元</li>
+<li class="io4">后盖图案非常漂亮，不愧是官方出品，和机型严丝合缝很赞！</li>
+</ul>
+
+<ul class="io5 fl">
+<li class="io6">遥控飞行球</li>
+<li class="io7">| 660人好评</li>
+<li class="io8">130元</li>
+<li class="io9">结实耐用，滞空能力强，手机控制很方便，很喜欢！</li>
+</ul>
+
+
+<ul class="io10 fl">
+<li class="io11">小米商务真皮钱包</li>
+<li class="io12">| 3164人好评</li>
+<li class="io13">159元</li>
+<li class="io14">钱包做工很精细很好，能装的卡也很多，是真皮的我很喜欢O！</li>
+</ul>
+</div>
+<div class="ooo">特价产品</div>
+<div class="nn clearfix">
+<ul class="nn1 fl">
+<li>SanDisk 32GB存储卡（Class4）</li>
+<li>89元 <b class="nn2">109元</b></li>
+<li class="nn3">省20元</li>
+</ul>
+
+<ul class="nn4 fl">
+<li>红米保护套装</li>
+<li>40元 <b class="nn5">68元</b></li>
+<li class="nn6">省28元</li>
+</ul>
+
+
+<ul class="nn7 fl">
+<li>大电池全能套装</li>
+<li>129元 <b class="nn8">178元</b></li>
+<li class="nn9">省49元</li>
+</ul>
+
+
+
+
+
+</div>
+<div class="oopo">
+<p class="oopo1">多看图书<a href="#" class="oop2 fr">更多</a></p>
+</div>
+<div class="uuu clearfix">
+<ul class="uuu1 fl">
+<li>《参与感：小米口碑营销内部手册》</li>
+<li>黎万强（小米联合创始人）</li>
+<li>9.99元</li>
+<li class="uuu2">这是阿黎在小米四年的工作笔记，雷军亲笔作序。</li>
+</ul>
+
+<ul class="uuu3 fl">
+<li>《万万没想到：生活才是喜剧》</li>
+<li>有时右逝 叫兽易小星</li>
+<li>3.99元</li>
+<li class="uuu4">同名火爆网剧《万万没想到》小说版，和兽和锤锤的青春梦想故事！</li>
+</ul>
+
+<ul class="uuu5 fl">
+<li>《雪球专刊 美女为何爱渣男？》</li>
+<li>雪球用户</li>
+<li>免费</li>
+<li class="uuu6">至“爱夜蒲”及我们迷乱的青春；投资于恋爱的异同点。</li>
+</ul>
+
+
+
+
+</div>
+<div class="yu">
+<p class="yu1">MIUI主题<a href="#" class="oop2 fr">更多</a></p>
+</div>
+<div class="zzz">
+<ul class="zzz1 fl">
+<li>光棍节想脱单吗？告白字体0元起</li>
+<li>6米币</li>
+
+</ul>
+
+<ul class="zzz2 fl">
+<li>无锁不能</li>
+<li>6米币</li>
+
+</ul>
+
+<ul class="zzz3 fl">
+<li>6色</li>
+<li>6米币</li>
+
+</ul>
+
+
+
+</div>
+<div class="ppppp"></div>
+<div class="k clearfix">
+<div class="kk fl">
+<p class="kk1">1小时快修服务</p>
+</div>
+
+
+<div class="kk2 fl">
+<p class="kk3">7天无理由退货</p>
+</div>
+
+
+
+<div class="kk4 fl">
+<p class="kk5">15天免费换货</p>
+</div>
+
+
+
+<div class="kk6 fl">
+<p class="kk7">满150元包邮</p>
+</div>
+
+
+<div class="kk8 fl">
+<p class="kk9">520余家售后网点</p>
+</div>
+
+
+
+</div>
+<div class="gg clearfix">
+<ul class="gg1 fl">
+<li class="gg2">帮助中心</li>
+<li>购物指南</li>
+<li>支付方式</li>
+<li>配送方式</li>
+</ul>
+
+<ul class="gg3 fl">
+<li class="gg2">服务之家</li>
+<li>售后政策</li>
+<li>自助服务</li>
+<li>相关下载</li>
+</ul>
+
+
+<ul class="gg4 fl">
+<li class="gg2">小米之家</li>
+<li>小米之家</li>
+<li>服务网点</li>
+<li>预约亲临到店服务</li>
+</ul>
+
+<ul class="gg5 fl">
+<li class="gg2">关于小米</li>
+<li>了解小米</li>
+<li>加入小米</li>
+<li>联系我们</li>
+</ul>
+
+<ul class="gg6 fl">
+<li class="gg2">关注我们</li>
+<li>新浪微博</li>
+<li>QQ空间</li>
+<li>官方微信</li>
+</ul>
+
+<ul class="gg7 fl">
+<li class="gg2">400-100-5678</li>
+<li>周一至周日 8：00-18：00</li>
+<li>（仅收市话费）</li>
+<li class="gg8">24小时在线客服</li>
+</ul>
+</div>
+<div class="jj"> 
+<p class="jj1">小米旗下网站：小米网 | MIUI | 米聊 | 多看书城 | 小米路由器 | 繁体香港 | 繁体台湾 | English | 小米后院 | 小米天猫店 | 小米网盟</p>
+<p class="jj2">@mi.com京ICP证110507号京ICP备10046444号京公网安备1101080212535号京网文[2014]0059-0009号</p>
+
+
+</div>
+<div class="bnbn">
+<img src="img/53.png">
+</div>
+
+</body>
+</html>
